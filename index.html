@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Romares Academy 360°</title>
+<link rel="icon" href="assets/romares-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ícones (traço fino, estilo do portal) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#977438"/><stop offset=".6" stop-color="#d9b774"/><stop offset="1" stop-color="#f3dfb0"/></linearGradient>
+  </defs>
+  <symbol id="i-login" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="m10 17 5-5-5-5"/><path d="M15 12H3"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.5 12.9 17 22l-5-3-5 3 1.5-9.1"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.7V17c0 .6-.5 1-1 1.2C7.9 18.8 7 20.2 7 22"/><path d="M14 14.7V17c0 .6.5 1 1 1.2 1.1.6 2 2 2 3.8"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></symbol>
+  <symbol id="i-passport" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M15 8h2M15 12h2M7 16h10"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/></symbol>
+  <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><path d="M15 15h2v2h-2zM19 19h2v2h-2zM15 19v2M19 15h2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 16v-4M12 16V8M17 16v-7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5M3 21v-5h5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.9-3.9a3 3 0 0 0-4.2 0l-.9.9a1 1 0 1 1-3-3l2.8-2.8a5.8 5.8 0 0 1 7.1-.9l.5.3a2 2 0 0 0 1.4.3L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+  <symbol id="i-broom" viewBox="0 0 24 24"><path d="m13 11 9-9"/><path d="M14.6 15.6c.2-.9.6-1.8 1.2-2.4L17 12l-5-5-1.2 1.2c-.6.6-1.5 1-2.4 1.2L2 11l11 11z"/><path d="m6 16 2 2"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></symbol>
+  <symbol id="i-door" viewBox="0 0 24 24"><path d="M3 21h18M5 21V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v17"/><path d="M15 12h.01"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></symbol>
+</svg>
+
+<div id="stage">
+  <canvas id="fx" width="1920" height="1080"></canvas>
+  <div id="progress"></div>
+
+  <!-- 1 · CAPA -->
+  <section class="slide cover" data-eu="1" data-at="hero" data-fala="Olá! Hoje vou mostrar como o Romares Academy 360° prepara a nossa gente.">
+    <div class="ring"><i></i></div>
+    <img class="logo-big rv z" src="assets/romares-logo.svg" alt="Romares Lar">
+    <h1 class="rv"><small>PLATAFORMA DE DESENVOLVIMENTO</small>Romares <br> Academy <span class="gold-grad">360°</span></h1>
+    <p class="lead rv" style="max-width:820px">Preparar pessoas, padronizar a operação e dar à gestão uma visão real da capacidade das nossas equipes.</p>
+    <div class="meta rv">
+      <span class="chip"><svg class="i" width="20" height="20"><use href="#i-flag"/></svg>Apresentação à gestão</span>
+      <span class="chip">Novembro · 2026</span>
+    </div>
+  </section>
+
+  <!-- 2 · PONTO DE PARTIDA -->
+  <section class="slide" data-eu="4" data-at="side" data-fala="Antes do sistema, a pergunta era: qual problema queremos resolver de verdade?">
+    <div class="eyebrow rv">O ponto de partida</div>
+    <h2 class="title rv" style="max-width:1150px">A ideia do Victor: um sistema para <span class="gold">preparar e desenvolver melhor</span> quem faz a Romares acontecer.</h2>
+    <div class="problem">
+      <div class="card rv"><div class="n">PROBLEMA 01</div><h3>Sem padrão nos treinamentos</h3><p>Cada posto poderia vir a ensina de um jeito. A qualidade dependeria de quem orientava.</p></div>
+      <div class="card rv"><div class="n">PROBLEMA 02</div><h3>Pouco acompanhamento</h3><p>Seria difícil saber como cada profissional estava evoluindo e se estava pronto para a função.</p></div>
+      <div class="card rv"><div class="n">PROBLEMA 03</div><h3>Conhecimento desigual</h3><p>O acesso ao conhecimento poderia variar conforme a função e o local de trabalho.</p></div>
+    </div>
+  </section>
+
+  <!-- 3 · O QUE BUSCÁVAMOS -->
+  <section class="slide">
+    <div class="eyebrow rv">O que buscávamos</div>
+    <h2 class="title rv">Todos com acesso ao <span class="gold">mesmo conhecimento</span>, independentemente da função.</h2>
+    <div class="grid goals">
+      <div class="card rv"><div class="ico"><svg class="i"><use href="#i-shield"/></svg></div><h3>Menos erros</h3><p>Procedimentos padronizados reduzem falhas na operação.</p><div class="bar"><i></i></div></div>
+      <div class="card rv"><div class="ico"><svg class="i"><use href="#i-star"/></svg></div><h3>Mais qualidade</h3><p>Serviço consistente em todos os condomínios atendidos.</p><div class="bar"><i></i></div></div>
+      <div class="card rv"><div class="ico"><svg class="i"><use href="#i-trend"/></svg></div><h3>Evolução visível</h3><p>Acompanhar o crescimento de cada profissional com dados.</p><div class="bar"><i></i></div></div>
+      <div class="card rv"><div class="ico"><svg class="i"><use href="#i-users"/></svg></div><h3>Mão de obra qualificada</h3><p>Formar talentos e preparar pessoas para assumir mais.</p><div class="bar"><i></i></div></div>
+    </div>
+    <p class="quote rv">Não é só treinar pessoas. É fazer com que elas <b>cresçam</b>.</p>
+  </section>
+
+  <!-- 4 · ECOSSISTEMA 360° -->
+  <section class="slide" id="s-eco">
+    <div class="eyebrow rv">O ecossistema 360°</div>
+    <h2 class="title rv" style="font-size:46px">14 módulos. Cada um resolve uma necessidade <span class="gold">do colaborador e da gestão</span>.</h2>
+    <div class="eco">
+      <div class="orbit rv f" id="orbit">
+        <div class="track"></div><div class="track t2"></div>
+        <div class="hub"><div><img src="assets/romares-logo.svg" alt=""><b>360°</b></div></div>
+      </div>
+      <div class="detail rv r">
+        <div class="card" id="detail"></div>
+        <div class="legend">
+          <span><i style="background:var(--gold)"></i>Em funcionamento</span>
+          <span><i style="border:2px solid var(--silver-2)"></i>Pendente</span>
+        </div>
+        <p class="hint">Passe o mouse ou clique nos módulos · a rotação é automática</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · ONDE ESTAMOS -->
+  <section class="slide" data-eu="3" data-at="side" data-fala="Sem promessa: aqui está só o que já funciona e o que vem a seguir.">
+    <div class="eyebrow rv">Onde estamos hoje</div>
+    <h2 class="title rv" style="max-width:1150px">A base já está de pé: <span class="gold">12 dos 14 módulos</span> em funcionamento.</h2>
+    <div class="today">
+      <div class="donut rv z">
+        <svg viewBox="0 0 200 200">
+          <circle class="bg" cx="100" cy="100" r="76" stroke-width="22"/>
+          <circle class="seg" data-v="12" data-o="0" cx="100" cy="100" r="76" stroke="#d9b774" stroke-width="22"/>
+          <circle class="seg" data-v="2" data-o="12" cx="100" cy="100" r="76" stroke="#4f6075" stroke-width="22"/>
+        </svg>
+        <div class="center"><div><b class="count" data-to="12">0</b><span>de 14 módulos<br>funcionando</span></div></div>
+      </div>
+      <div class="rows">
+        <div class="row rv r"><div class="big gold">12</div><div><h4>Em funcionamento</h4><p>Integração, trilhas por cargo, cursos, microlearning, missões, avaliações, certificação com reciclagem, gamificação, passaporte, matriz, Estúdio e painéis.</p></div></div>
+        <div class="row rv r"><div class="big" style="color:#7d8ea3">2</div><div><h4>Pendente</h4><p>Tutor virtual Rô (desativado no momento) e QR Code com procedimentos no posto.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · DIVISOR: 6 PERGUNTAS -->
+  <section class="slide" data-eu="2" data-at="side" data-fala="Agora, as seis perguntas que a gestão precisa ver respondidas.">
+    <div class="eyebrow rv">O que a diretoria perguntou</div>
+    <h2 class="title rv" style="max-width:1100px">Seis perguntas.<br><span class="gold">Respostas diretas.</span></h2>
+    <div class="qgrid">
+      <div class="qchip rv l"><b>01</b>Em que momento da admissão o portal entra?</div>
+      <div class="qchip rv l"><b>02</b>Quem é dono de cada parte?</div>
+      <div class="qchip rv l"><b>03</b>E quando o funcionário não conclui?</div>
+      <div class="qchip rv l"><b>04</b>A trilha muda conforme o cargo?</div>
+      <div class="qchip rv l"><b>05</b>O XP e o ranking valem o quê?</div>
+      <div class="qchip rv l"><b>06</b>O que o síndico enxerga disso?</div>
+    </div>
+  </section>
+
+  <!-- 7 · Q1 ADMISSÃO -->
+  <section class="slide light" data-eu="1" data-at="mini">
+    <div class="qhead">
+      <div class="qnum rv z">01</div>
+      <div>
+        <div class="eyebrow rv">Pergunta 1 de 6 · Admissão</div>
+        <h2 class="rv">Em que momento da admissão o portal entra?</h2>
+        <p class="sub rv">Primeiro dia, antes de assumir o posto ou depois do exame? Quem cadastra e em quanto tempo há acesso?</p>
+      </div>
+    </div>
+    <div class="answer rv"><span class="lbl">RESPOSTA CURTA</span><p>No 1º dia, depois do exame admissional e antes de assumir o posto. Quem já está cadastrado no sistema de gestão tem acesso, sem cadastro duplo e sem senha para entregar.</p></div>
+    <div class="qbody">
+      <div class="timeline">
+        <div class="line"><i></i></div>
+        <div class="step rv"><div class="dot"><svg class="i"><use href="#i-file"/></svg></div><h4>Exame admissional</h4><p>Contratação aprovada pelo DP</p></div>
+        <div class="step rv"><div class="dot"><svg class="i"><use href="#i-user"/></svg></div><h4>Cadastro no sistema</h4><p>DP/RH registra no sistema de gestão, como já faz hoje</p></div>
+        <div class="step hl rv"><div class="dot"><svg class="i"><use href="#i-key"/></svg></div><h4>Acesso liberado</h4><p>Cadastro ativo = entra com a matrícula. Automático</p></div>
+        <div class="step rv"><div class="dot"><svg class="i"><use href="#i-door"/></svg></div><h4>1º dia: Integração</h4><p>Trilha institucional obrigatória antes de tudo</p></div>
+        <div class="step rv"><div class="dot"><svg class="i"><use href="#i-building"/></svg></div><h4>Assume o posto</h4><p>Com a trilha do cargo iniciada e a prática validada</p></div>
+      </div>
+      <div class="cards3">
+        <div class="card rv"><h3>Quando entra? <span class="t prop">PROPOSTA</span></h3><p>No primeiro dia de trabalho, como parte da integração. Ninguém assume o posto sem ter passado pela trilha institucional.</p></div>
+        <div class="card rv"><h3>Quem cadastra? <span class="t sys">JÁ FUNCIONA</span></h3><p>O DP/RH, no sistema de gestão. O Academy lê colaboradores, cargos e postos de lá automaticamente.</p></div>
+        <div class="card rv"><h3>Em quanto tempo? <span class="t sys">JÁ FUNCIONA</span></h3><p>Imediato: com o cadastro ativo, a matrícula já é reconhecida. A senha é a matrícula + @ + as duas primeiras letras do nome (ex.: 1234@ma).</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · Q2 DONOS -->
+  <section class="slide light">
+    <div class="qhead" style="padding-right:0">
+      <div class="qnum rv z">02</div>
+      <div>
+        <div class="eyebrow rv">Pergunta 2 de 6 · Responsabilidades</div>
+        <h2 class="rv">Quem é dono de cada parte?</h2>
+        <p class="sub rv">Quem monta a trilha do cargo, quem valida a prática e quem cobra quem está atrasado?</p>
+      </div>
+    </div>
+    <div class="answer rv"><span class="lbl">RESPOSTA CURTA</span><p>O RH desenha, o gestor do contrato executa e cobra, e o síndico acompanha. A cobrança é sempre da Romares.</p></div>
+    <div class="qbody" style="margin-top:22px">
+      <table class="owners">
+        <thead><tr>
+          <th style="text-align:left;vertical-align:bottom"><span class="t prop">PROPOSTA DE DIVISÃO</span></th>
+          <th><span class="who"><svg class="i" width="30" height="30"><use href="#i-users"/></svg>RH<small>Desenha e audita</small></span></th>
+          <th><span class="who"><svg class="i" width="30" height="30"><use href="#i-shield"/></svg>Gestor do contrato<small>Supervisor operacional</small></span></th>
+          <th><span class="who"><svg class="i" width="30" height="30"><use href="#i-building"/></svg>Síndico<small>Cliente</small></span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td>Monta a trilha de cada cargo<small>No Estúdio de cursos, sem depender da TI</small></td><td><span class="role r">RESPONSÁVEL</span></td><td><span class="role a">CONTRIBUI</span></td><td><span class="role n">—</span></td></tr>
+          <tr><td>Define a meta de competência do cargo<small>O que cada função precisa dominar</small></td><td><span class="role r">RESPONSÁVEL</span></td><td><span class="role a">CONTRIBUI</span></td><td><span class="role n">—</span></td></tr>
+          <tr><td>Valida a prática no posto<small>Registra a avaliação de competências</small></td><td><span class="role a">AUDITA</span></td><td><span class="role r">RESPONSÁVEL</span></td><td><span class="role n">—</span></td></tr>
+          <tr><td>Cobra quem está atrasado<small>Usa o painel do posto</small></td><td><span class="role a">MONITORA</span></td><td><span class="role r">RESPONSÁVEL</span></td><td><span class="role v">ACOMPANHA</span></td></tr>
+        </tbody>
+      </table>
+      <div class="note rv"><svg class="i"><use href="#i-info"/></svg><span><span class="t sys">JÁ FUNCIONA</span>&nbsp; Quem pode criar cursos, avaliar e ver painéis é definido pelo administrador do Academy, na tela de Permissões de acesso. Gestor sem permissão não entra. Mudar um responsável é configuração, não programação.</span></div>
+    </div>
+  </section>
+
+  <!-- 9 · Q3 NÃO CONCLUSÃO -->
+  <section class="slide light" data-eu="4" data-at="mini">
+    <div class="qhead">
+      <div class="qnum rv z">03</div>
+      <div>
+        <div class="eyebrow rv">Pergunta 3 de 6 · Não conclusão</div>
+        <h2 class="rv">E quando o funcionário não conclui?</h2>
+        <p class="sub rv">Existe prazo? Avisa alguém? Trava a etapa seguinte? O que a Romares faz nesse caso?</p>
+      </div>
+    </div>
+    <div class="answer rv"><span class="lbl">RESPOSTA CURTA</span><p>O sistema trava o avanço e mostra quem está pendente. A gestão cobra seguindo uma régua de prazos clara.</p></div>
+    <div class="qbody two" style="margin-top:26px">
+      <div class="panel rv l">
+        <h3><span class="t sys">JÁ FUNCIONA</span> O que o sistema garante</h3>
+        <div class="check"><div class="ci"><svg class="i"><use href="#i-lock"/></svg></div><div><b>Trava a etapa seguinte</b><span>Sem a Integração, os demais cursos ficam bloqueados. Vídeo só libera a próxima aula depois de assistido.</span></div></div>
+        <div class="check"><div class="ci"><svg class="i"><use href="#i-refresh"/></svg></div><div><b>Sem “chute”</b><span>2 tentativas por pergunta; o 2º erro reinicia o curso, com limite de reinícios por dia.</span></div></div>
+        <div class="check"><div class="ci"><svg class="i"><use href="#i-eye"/></svg></div><div><b>Mostra quem está pendente</b><span>O painel do posto aponta quem está abaixo da meta do cargo.</span></div></div>
+        <div class="check"><div class="ci"><svg class="i"><use href="#i-route"/></svg></div><div><b>Plano de nivelamento</b><span>Gera o plano do posto a partir das lacunas, com prazo sugerido de 30 dias.</span></div></div>
+      </div>
+      <div class="panel rv r">
+        <h3><span class="t prop">PROPOSTA</span> Régua de acompanhamento</h3>
+        <div class="ruler">
+          <div class="rstep"><span class="d">D0</span><b>Curso atribuído</b><span>Prazo padrão de conclusão comunicado na integração.</span></div>
+          <div class="rstep"><span class="d">D+7</span><b>Lembrete do supervisor</b><span>Conversa rápida no posto com quem não iniciou.</span></div>
+          <div class="rstep"><span class="d">D+15</span><b>Gestor do contrato</b><span>Cobrança formal e horário reservado para concluir.</span></div>
+          <div class="rstep"><span class="d">D+30</span><b>RH entra</b><span>Plano de nivelamento ou reforço presencial.</span></div>
+        </div>
+        <div class="warn"><svg class="i"><use href="#i-info"/></svg><span>Já existe aviso automático quando a reciclagem de um curso vence. O aviso de prazo do primeiro curso ainda não existe: até lá, a régua roda pelo painel do RH.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 · Q4 TRILHA POR CARGO -->
+  <section class="slide light">
+    <div class="qhead" style="padding-right:0">
+      <div class="qnum rv z">04</div>
+      <div>
+        <div class="eyebrow rv">Pergunta 4 de 6 · Trilhas</div>
+        <h2 class="rv">A trilha muda conforme o cargo?</h2>
+        <p class="sub rv">Porteiro, zelador e limpeza seguem a mesma? Quem decide o que cada cargo precisa saber?</p>
+      </div>
+    </div>
+    <div class="answer rv"><span class="lbl">RESPOSTA CURTA</span><p>Não é a mesma. A base é comum a todos; o restante muda por cargo, e o sistema já mostra a cada colaborador só a trilha do seu cargo.</p></div>
+    <div class="qbody paths" style="margin-top:26px">
+      <div>
+        <div class="tracks">
+          <div class="track-col rv">
+            <div class="role-h"><div class="ico"><svg class="i"><use href="#i-door"/></svg></div><h4>Porteiro</h4></div>
+            <span class="pill">Portaria</span><span class="pill">Segurança</span><span class="pill">Atendimento</span>
+            <div class="meta-lbl">META DO CARGO · EXEMPLO</div>
+            <div class="mbar">Atendimento<span class="b"><i data-w="90"></i></span><em>90</em></div>
+            <div class="mbar">Segurança<span class="b"><i data-w="85"></i></span><em>85</em></div>
+            <div class="mbar">Limpeza<span class="b"><i data-w="40"></i></span><em>40</em></div>
+          </div>
+          <div class="track-col rv">
+            <div class="role-h"><div class="ico"><svg class="i"><use href="#i-wrench"/></svg></div><h4>Zelador</h4></div>
+            <span class="pill">Zeladoria</span><span class="pill">Segurança</span><span class="pill">Atendimento</span>
+            <div class="meta-lbl">META DO CARGO · EXEMPLO</div>
+            <div class="mbar">Atendimento<span class="b"><i data-w="75"></i></span><em>75</em></div>
+            <div class="mbar">Segurança<span class="b"><i data-w="70"></i></span><em>70</em></div>
+            <div class="mbar">Manutenção<span class="b"><i data-w="90"></i></span><em>90</em></div>
+          </div>
+          <div class="track-col rv">
+            <div class="role-h"><div class="ico"><svg class="i"><use href="#i-broom"/></svg></div><h4>Limpeza</h4></div>
+            <span class="pill">Limpeza</span><span class="pill">Atendimento</span><span class="pill">Segurança</span>
+            <div class="meta-lbl">META DO CARGO · EXEMPLO</div>
+            <div class="mbar">Atendimento<span class="b"><i data-w="65"></i></span><em>65</em></div>
+            <div class="mbar">Segurança<span class="b"><i data-w="55"></i></span><em>55</em></div>
+            <div class="mbar">Limpeza<span class="b"><i data-w="95"></i></span><em>95</em></div>
+          </div>
+        </div>
+        <div class="base rv"><svg class="i" width="34" height="34" style="color:var(--gold)"><use href="#i-login"/></svg><div><b>Base comum: Integração institucional</b><br><span>Igual para todos os cargos: quem é a Romares, nossos padrões e a forma como trabalhamos.</span></div></div>
+      </div>
+      <div class="decide">
+        <div class="panel rv r">
+          <h3><span class="t prop">PROPOSTA</span> Quem decide</h3>
+          <ul>
+            <li>RH define o conteúdo com a gestão operacional de cada área.</li>
+            <li>A diretoria aprova o padrão de cada cargo.</li>
+            <li>O RH publica no Estúdio, ligando o curso aos cargos, sem a TI.</li>
+          </ul>
+        </div>
+        <div class="panel rv r">
+          <h3><span class="t sys">JÁ FUNCIONA</span></h3>
+          <p>Trilha atribuída automaticamente pelo cargo do cadastro no ERP: o card mostra “Trilha de Porteiro”, e curso de outro cargo não abre. A matriz compara cada pessoa à meta do <b>seu</b> cargo.</p>
+          <p style="margin-top:12px">Quem muda de cargo recebe a nova trilha e mantém os certificados já conquistados.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · Q5 XP E RANKING -->
+  <section class="slide light" data-eu="3" data-at="mini">
+    <div class="qhead">
+      <div class="qnum rv z">05</div>
+      <div>
+        <div class="eyebrow rv">Pergunta 5 de 6 · Gamificação</div>
+        <h2 class="rv">O XP e o ranking valem o quê?</h2>
+        <p class="sub rv">Reconhecimento, promoção, nada? Sem prometer o que o sistema não faz.</p>
+      </div>
+    </div>
+    <div class="answer rv"><span class="lbl">RESPOSTA CURTA</span><p>O XP mede participação, não competência. Vale reconhecimento, não salário nem promoção automática.</p></div>
+    <div class="qbody">
+      <div class="xp3">
+        <div class="panel yes rv">
+          <h3><span class="badge"><svg class="i"><use href="#i-trophy"/></svg></span>O que vale</h3>
+          <ul>
+            <li>Reconhecimento e visibilidade<small>Ranking mensal, geral e por equipe</small></li>
+            <li>Conquistas e níveis<small>Do Iniciante ao Avançado (a partir de 500 XP)</small></li>
+            <li>Motivação para continuar<small>Cada missão concluída é comemorada</small></li>
+          </ul>
+        </div>
+        <div class="panel no rv">
+          <h3><span class="badge"><svg class="i"><use href="#i-x"/></svg></span>O que não vale</h3>
+          <ul>
+            <li>Efeito salarial<small>O próprio sistema avisa isso ao colaborador</small></li>
+            <li>Promoção automática<small>XP alto não significa estar pronto</small></li>
+            <li>Avaliação formal de desempenho<small>Competência não muda por XP</small></li>
+          </ul>
+        </div>
+        <div class="panel guard rv">
+          <h3><span class="badge"><svg class="i"><use href="#i-shield"/></svg></span>Proteções</h3>
+          <ul>
+            <li>Repetir curso não gera XP<small>Não dá para acumular pontos repetindo</small></li>
+            <li>Vídeo precisa ser assistido<small>Pular o vídeo não libera a próxima aula</small></li>
+            <li>Competência vem do RH<small>Nota avaliada por pessoa, sem autoavaliação</small></li>
+          </ul>
+        </div>
+      </div>
+      <div class="levelbar rv">
+        <span class="lb">Iniciante<small>0 XP</small></span>
+        <span class="track"><i></i></span>
+        <span class="lb" style="text-align:right">Avançado<small>500 XP</small></span>
+      </div>
+      <div class="note rv" style="margin-top:16px"><svg class="i"><use href="#i-info"/></svg><span><span class="t prop">PROPOSTA</span>&nbsp; Destaque mensal por posto como reconhecimento simbólico. Para promoções, o critério objetivo é a <b>Matriz de competências</b>, não o XP.</span></div>
+    </div>
+  </section>
+
+  <!-- 12 · Q6 SÍNDICO -->
+  <section class="slide light">
+    <div class="qhead" style="padding-right:0">
+      <div class="qnum rv z">06</div>
+      <div>
+        <div class="eyebrow rv">Pergunta 6 de 6 · Cliente</div>
+        <h2 class="rv">O que o síndico enxerga disso?</h2>
+        <p class="sub rv">O que aparece para ele no Controle do Síndico, e por que isso pesa na venda.</p>
+      </div>
+    </div>
+    <div class="answer rv"><span class="lbl">RESPOSTA CURTA</span><p>Ele passa a ver, em números, que a equipe do condomínio dele está treinada. É uma prova concreta que vira argumento de venda e de renovação.</p></div>
+    <div class="qbody sind" style="margin-top:26px">
+      <div class="mock rv l">
+        <div class="top"><div><small>CONTROLE DO SÍNDICO</small><b>Equipe Romares · Residencial Exemplo</b></div><span class="t">EXEMPLO ILUSTRATIVO</span></div>
+        <div class="body">
+          <div class="rings">
+            <div><div class="ringc"><svg viewBox="0 0 140 140"><circle class="bg" cx="70" cy="70" r="58"/><circle class="fg" data-p="100" cx="70" cy="70" r="58"/></svg><b><span class="count" data-to="100">0</span>%</b></div><p>Integração<br>concluída</p></div>
+            <div><div class="ringc"><svg viewBox="0 0 140 140"><circle class="bg" cx="70" cy="70" r="58"/><circle class="fg" data-p="92" cx="70" cy="70" r="58"/></svg><b><span class="count" data-to="92">0</span>%</b></div><p>Treinamentos<br>em dia</p></div>
+            <div><div class="ringc"><svg viewBox="0 0 140 140"><circle class="bg" cx="70" cy="70" r="58"/><circle class="fg" data-p="81" cx="70" cy="70" r="58"/></svg><b><span class="count" data-to="81">0</span>%</b></div><p>Requisitos do<br>cargo atendidos</p></div>
+          </div>
+          <div class="list">
+            <div class="li"><span>Colaboradores no condomínio</span><b>6</b></div>
+            <div class="li"><span>Certificados emitidos</span><b>18</b></div>
+            <div class="li"><span>Último treinamento concluído</span><b>Atendimento ao morador</b></div>
+          </div>
+        </div>
+        <div class="foot"><svg class="i"><use href="#i-shield"/></svg>Somente indicadores da equipe. Sem notas individuais nem dados pessoais (LGPD).</div>
+      </div>
+      <div class="sell">
+        <div class="panel rv r">
+          <h3>Por que pesa na venda</h3>
+          <div class="sp"><div class="ico"><svg class="i"><use href="#i-award"/></svg></div><div><b>Prova, não promessa</b><span>A proposta comercial mostra uma equipe treinada e medida.</span></div></div>
+          <div class="sp"><div class="ico"><svg class="i"><use href="#i-eye"/></svg></div><div><b>Transparência</b><span>O síndico acompanha a evolução sem precisar pedir relatório.</span></div></div>
+          <div class="sp"><div class="ico"><svg class="i"><use href="#i-handshake"/></svg></div><div><b>Renovação de contrato</b><span>Evidência objetiva de qualidade na hora de renovar.</span></div></div>
+          <div class="sp"><div class="ico"><svg class="i"><use href="#i-star"/></svg></div><div><b>Diferencial competitivo</b><span>Poucos concorrentes conseguem mostrar isso em números.</span></div></div>
+        </div>
+        <div class="warn rv" style="margin-top:16px"><svg class="i"><use href="#i-info"/></svg><span><b>Hoje:</b> os dados já estão organizados por posto e contrato, e é isso que a Visão executiva usa. <b>Próximo passo:</b> levar este resumo ao Controle do Síndico.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 · DECISÕES -->
+  <section class="slide" data-eu="2" data-at="side" data-fala="Para avançar, precisamos destas decisões da diretoria.">
+    <div class="eyebrow rv">O que pedimos à diretoria</div>
+    <h2 class="title rv" style="max-width:1150px">Seis decisões para colocar o <span class="gold">Romares Academy 360°</span> em rotina.</h2>
+    <div class="decisions">
+      <div class="dec rv" style="--i:0"><div class="box"><svg class="i"><use href="#i-check"/></svg></div><div><small>PERGUNTA 01</small><b>Momento de entrada</b><span>Portal no 1º dia, antes de assumir o posto.</span></div></div>
+      <div class="dec rv" style="--i:1"><div class="box"><svg class="i"><use href="#i-check"/></svg></div><div><small>PERGUNTA 02</small><b>Donos oficiais</b><span>RH desenha, gestor do contrato cobra, síndico acompanha.</span></div></div>
+      <div class="dec rv" style="--i:2"><div class="box"><svg class="i"><use href="#i-check"/></svg></div><div><small>PERGUNTA 03</small><b>Régua de prazos</b><span>Lembretes em 7, 15 e 30 dias, com consequência clara.</span></div></div>
+      <div class="dec rv" style="--i:3"><div class="box"><svg class="i"><use href="#i-check"/></svg></div><div><small>PERGUNTA 04</small><b>Trilhas dos cargos-chave</b><span>Porteiro, zelador e limpeza: conteúdo e metas aprovados.</span></div></div>
+      <div class="dec rv" style="--i:4"><div class="box"><svg class="i"><use href="#i-check"/></svg></div><div><small>PERGUNTA 05</small><b>Política de reconhecimento</b><span>O que o destaque mensal oferece, sem ligar XP a salário.</span></div></div>
+      <div class="dec rv" style="--i:5"><div class="box"><svg class="i"><use href="#i-check"/></svg></div><div><small>PERGUNTA 06</small><b>Visão do síndico</b><span>Priorizar como a próxima entrega do sistema.</span></div></div>
+    </div>
+    <div class="pilot rv"><svg class="i" width="34" height="34" style="color:var(--gold)"><use href="#i-flag"/></svg><span><b>Próximo passo sugerido:</b> piloto em um contrato, com as regras acima, antes de expandir para todos os postos.</span></div>
+  </section>
+
+  <!-- 14 · ENCERRAMENTO -->
+  <section class="slide closing" data-eu="3" data-at="hero" data-fala="Obrigado! Fico à disposição para perguntas.">
+    <div class="eyebrow rv">Em resumo</div>
+    <blockquote class="rv" style="max-width:1000px">O Academy não é um lugar para assistir aulas. É como a Romares <b class="gold">prepara pessoas</b>, <b>identifica talentos</b>, <b>reduz falhas</b> e enxerga a <b class="gold">real capacidade</b> das suas equipes.</blockquote>
+    <div class="thanks rv"><img src="assets/romares-logo.svg" alt="Romares Lar"><span>OBRIGADO</span></div>
+  </section>
+
+  <!-- Apresentador -->
+  <div id="eu" class="hide" data-at="hero">
+    <div class="bubble"></div>
+    <div class="frame"><img src="assets/eu_1.jpg" alt="Apresentador"><span class="tag"><i></i>APRESENTANDO</span></div>
+  </div>
+
+  <div id="chrome">
+    <div class="brand"><img src="assets/romares-logo.svg" alt=""><span>ROMARES ACADEMY <b>360°</b></span></div>
+    <div class="nav">
+      <button id="prev" aria-label="Anterior"><svg class="i" width="22" height="22"><use href="#i-left"/></svg></button>
+      <span id="counter"></span>
+      <button id="next" aria-label="Próximo"><svg class="i" width="22" height="22"><use href="#i-right"/></svg></button>
+    </div>
+  </div>
+  <div id="help"><kbd>→</kbd>próximo &nbsp; <kbd>←</kbd>anterior<br><kbd>F</kbd>tela cheia &nbsp; <kbd>P</kbd>mostrar/ocultar apresentador<br><kbd>Home</kbd>início &nbsp; <kbd>?</kbd>esta ajuda</div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
