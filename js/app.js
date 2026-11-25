@@ -36,7 +36,7 @@
     ['i-qr', 'QR Code e base de conhecimento', 'APOIAR', 'Procedimentos e orientações acessíveis diretamente no posto de trabalho.', 'evol', 'Pendente: acesso aos procedimentos por QR Code no posto ainda não foi implementado.'],
     ['i-chat', 'Tutor virtual Rô', 'APOIAR', 'Apoio para tirar dúvidas e orientar com base nos procedimentos da empresa.', 'evol', 'Pendente: a Rô está desativada no momento e volta quando estiver pronta para uso.'],
     ['i-pen', 'Course Studio', 'GERIR', 'O próprio RH cria e atualiza treinamentos, sem depender sempre da TI.', 'disp', 'Editor com rascunho, vídeo, perguntas, cargos da trilha, prazo de reciclagem, publicação e arquivamento.'],
-    ['i-chart', 'Painéis RH, supervisão e diretoria', 'GERIR', 'Transforma as informações em indicadores para acompanhar equipes e decidir com segurança.', 'disp', 'Inteligência de RH por posto, matriz, visão executiva consolidada e exportação de dados.'],
+    ['i-chart', 'Painéis RH, supervisão e diretoria', 'GERIR', 'Transforma as informações em indicadores para acompanhar equipes e decidir com segurança.', 'disp', 'Inteligência de RH por posto, matriz, visão executiva consolidada e exportação de dados. Para o administrador: permissões de acesso e auditoria com filtros e PDF.'],
   ];
   const ST = { disp: 'EM FUNCIONAMENTO', parc: 'PARCIAL', evol: 'PENDENTE' };
   const orbit = document.getElementById('orbit');

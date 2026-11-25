@@ -1,6 +1,6 @@
 # Apresentação · Romares Academy 360°
 
-Slides em HTML para apresentar o **Romares Academy 360°** à diretoria: a ideia por trás do sistema, os 14 módulos, o que já funciona hoje e as respostas às seis perguntas da gestão.
+Slides em HTML para apresentar o **Romares Academy 360°** à diretoria: a ideia por trás do sistema, os 14 módulos, o que já funciona hoje, a segurança do acesso e as respostas às seis perguntas da gestão.
 
 Site estático, sem build e sem dependências: HTML, CSS e JavaScript puros. A única coisa externa é a fonte Manrope, que vem do Google Fonts (sem internet, o navegador usa uma fonte do sistema).
 
@@ -25,10 +25,10 @@ Também dá para navegar pelo mouse e pelo toque:
 
 - Clique na tela para avançar. Um clique no quarto esquerdo da tela volta.
 - No celular ou tablet, deslize para os lados.
-- No slide 6, clique numa pergunta para ir direto à resposta dela.
+- No slide 7, clique numa pergunta para ir direto à resposta dela.
 - No slide 4, passe o mouse ou clique nos módulos para ver o detalhe de cada um.
 
-## Roteiro (14 slides)
+## Roteiro (15 slides)
 
 | # | Slide | Conteúdo |
 |---|---|---|
@@ -37,15 +37,16 @@ Também dá para navegar pelo mouse e pelo toque:
 | 3 | O que buscávamos | Menos erros, mais qualidade, evolução visível, mão de obra qualificada |
 | 4 | Ecossistema 360° | Os 14 módulos, em órbita interativa, com o status de cada um |
 | 5 | Onde estamos | 12 de 14 módulos funcionando, 2 pendentes e o que é novo |
-| 6 | Divisor | As seis perguntas da diretoria |
-| 7 | Pergunta 1 · Admissão | Quando o portal entra e como é o acesso (matrícula e senha calculada) |
-| 8 | Pergunta 2 · Responsabilidades | Quem é responsável por cada parte: RH, gestor do contrato e síndico. Permissões dadas pelo administrador |
-| 9 | Pergunta 3 · Não conclusão | O que o sistema garante e a régua de prazos proposta (D0, D+7, D+15, D+30) |
-| 10 | Pergunta 4 · Trilhas | Base comum mais a trilha do cargo, ligada ao ERP |
-| 11 | Pergunta 5 · Gamificação | O que o XP e o ranking valem e o que não valem |
-| 12 | Pergunta 6 · Cliente | O que o síndico enxerga (exemplo ilustrativo) e por que isso pesa na venda |
-| 13 | Decisões | Seis decisões pedidas à diretoria e o piloto sugerido |
-| 14 | Encerramento | Resumo e agradecimento |
+| 6 | Segurança e controle | Senha própria, "Esqueci a senha", permissões de acesso, auditoria e LGPD |
+| 7 | Divisor | As seis perguntas da diretoria |
+| 8 | Pergunta 1 · Admissão | Quando o portal entra e como é o acesso (matrícula, senha inicial entregue pela gestão e senha própria no 1º acesso) |
+| 9 | Pergunta 2 · Responsabilidades | Quem é responsável por cada parte: RH, gestor do contrato e síndico, inclusive quem atende o "Esqueci a senha". Permissões dadas pelo administrador |
+| 10 | Pergunta 3 · Não conclusão | O que o sistema garante e a régua de prazos proposta (D0, D+7, D+15, D+30) |
+| 11 | Pergunta 4 · Trilhas | Base comum mais a trilha do cargo, ligada ao ERP |
+| 12 | Pergunta 5 · Gamificação | O que o XP e o ranking valem e o que não valem |
+| 13 | Pergunta 6 · Cliente | O que o síndico enxerga (exemplo ilustrativo) e por que isso pesa na venda |
+| 14 | Decisões | Seis decisões pedidas à diretoria e o piloto sugerido |
+| 15 | Encerramento | Resumo e agradecimento |
 
 Nas respostas, as etiquetas mostram a situação de cada ponto: **JÁ FUNCIONA** (está no sistema hoje), **PROPOSTA** (depende de decisão da diretoria) e **PRÓXIMA ETAPA** (ainda vai ser desenvolvido).
 
@@ -72,11 +73,14 @@ base.txt          Texto-base: a visão do Victor para cada módulo e as seis per
 
 ## Mantendo em dia com o sistema
 
-Os slides descrevem o estado real do repositório `RomaresAcademy360`. Quando entrar uma função nova lá, confira os slides 4, 5 e as perguntas relacionadas.
+Os slides descrevem o estado real do repositório `RomaresAcademy360`. Quando entrar uma função nova lá, confira os slides 4, 5, 6 e as perguntas relacionadas. A logo (`assets/romares-logo.svg`) é a mesma de `frontend/public/romares-logo.svg`.
 
-Última revisão: 22/11/2026. Inclui:
+Última revisão: 25/11/2026. Inclui:
 
 - trilha do cargo;
 - reciclagem com prazo em meses;
 - login do colaborador com matrícula;
-- superusuário e permissões de acesso.
+- superusuário e permissões de acesso;
+- senha própria do colaborador no 1º acesso e "Esqueci a senha" com redefinição pela gestão (a fórmula da senha inicial não aparece nos slides);
+- auditoria do superusuário, com filtros, PDF e retenção configurável;
+- nova logo da Romares.

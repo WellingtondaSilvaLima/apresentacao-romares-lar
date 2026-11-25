@@ -103,7 +103,7 @@ h2.title{font-size:52px;line-height:1.13;font-weight:700;letter-spacing:-1.2px;m
 #eu[data-hide-tag] .tag{display:none}
 
 /* ---------- Capa ---------- */
-.cover .logo-big{width:300px;margin-bottom:46px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.4))}
+.cover .logo-big{width:230px;margin-bottom:40px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.4))}
 .cover h1{font-size:104px;line-height:1;letter-spacing:-2px;font-weight:800}
 .cover h1 small{display:block;font-size:30px;letter-spacing:8px;font-weight:600;color:var(--silver);margin-bottom:18px}
 .cover .ring{position:absolute;right:-260px;top:-300px;width:1100px;height:1100px;border-radius:50%;border:1px solid rgba(217,183,116,.18);animation:spin 80s linear infinite}
@@ -139,6 +139,10 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke
 .goals .card .bar{height:4px;border-radius:4px;background:rgba(201,209,219,.15);margin-top:28px;overflow:hidden}
 .goals .card .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold-deep),var(--gold));transition:width 1.6s var(--ease)}
 .slide.active .goals .card .bar i{width:100%}
+.goals.sec{margin-top:80px}
+.goals.sec .card{padding:38px 32px 44px}
+.goals.sec .card p{font-size:20.5px}
+.pilot.sec-band{max-width:none;margin-top:56px}
 .quote{margin-top:64px;font-size:40px;font-weight:300;line-height:1.35;color:#fff;max-width:1400px}
 .quote b{font-weight:700}
 .quote::before{content:"“";color:var(--gold);font-size:90px;line-height:0;vertical-align:-36px;margin-right:10px;font-weight:700}
@@ -238,15 +242,15 @@ svg.i{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke
 .cards3 .card p{font-size:18.5px;line-height:1.5}
 
 /* Q2 — matriz de donos */
-.owners{width:100%;border-collapse:separate;border-spacing:0 12px;margin-top:-6px}
+.owners{width:100%;border-collapse:separate;border-spacing:0 9px;margin-top:-6px}
 .owners th{font-size:16px;letter-spacing:2px;color:var(--muted);font-weight:800;text-align:center;padding:0 10px 4px}
 .owners th:first-child{text-align:left}
 .owners th .who{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--navy);font-size:20px;letter-spacing:.5px}
 .owners th .who small{font-size:14px;color:var(--muted);letter-spacing:.5px;font-weight:600}
-.owners td{background:#fff;padding:20px 22px;font-size:21px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;color:var(--muted)}
+.owners td{background:#fff;padding:12px 22px;font-size:21px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;color:var(--muted)}
 .owners td:first-child{text-align:left;border-left:1px solid var(--line);border-radius:16px 0 0 16px;color:var(--navy);font-weight:700;font-size:22px;width:34%}
 .owners td:last-child{border-right:1px solid var(--line);border-radius:0 16px 16px 0}
-.owners td small{display:block;font-size:15.5px;color:var(--muted);font-weight:500;margin-top:4px}
+.owners td small{display:block;font-size:15.5px;color:var(--muted);font-weight:500;margin-top:2px}
 .role{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-size:16px;font-weight:800;letter-spacing:.8px}
 .role.r{background:var(--navy);color:var(--gold)}
 .role.a{background:var(--gold-soft);color:var(--gold-deep)}
